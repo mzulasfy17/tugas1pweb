@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 2rem 1rem;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-top: 5rem;
+        }
+
+        nav ul li {
+            margin: 1rem 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f0f0f0;
+        }
+
+        .container {
+            flex: 1;
+            margin: auto;
+            padding: 2rem;
+            margin-left: 250px;
+            width: calc(100% - 250px);
+            margin-top: 5rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 1rem;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            vertical-align: middle;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item:hover img {
+            transform: translateY(-30px);
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding: 1rem 0;
+            }
+
+            nav ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 0;
+            }
+
+            nav ul li {
+                margin: 0.5rem;
+            }
+
+            .container {
+                margin-left: 0;
+                width: 100%;
+                padding: 2rem 1rem;
+                margin-top: 6rem;
+            }
+
+            header {
+                position: relative;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-item {
+                margin-bottom: 1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="talent.html">bakat</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="foto1.jpeg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="foto2.jpeg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="foto3.jpeg" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="foto4.jpeg" alt="Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="foto5.jpeg" alt="Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="foto6.jpeg" alt="Image 6">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Gallery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

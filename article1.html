@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel 1</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            width: 250px;
+            min-height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 2rem 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        nav ul li {
+            margin: 1rem 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            color: #f4f4f4;
+        }
+
+        main {
+            margin-left: 250px;
+            padding: 2rem;
+            flex: 1;
+            background: #f4f4f4;
+        }
+
+        section {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin: 2rem auto;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #444;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .school-history {
+            margin-top: 1.5rem;
+        }
+
+        .school-history h3 {
+            font-size: 1.5rem;
+            color: #444;
+            margin-top: 1rem;
+        }
+
+        .school-history ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .school-history li {
+            background: #f9f9f9;
+            margin: 0.5rem 0;
+            padding: 0.5rem 1rem;
+            border-left: 5px solid #6a11cb;
+            border-radius: 5px;
+        }
+
+        .school-history li span {
+            display: block;
+        }
+
+        .school-history li span.school-name {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .school-history li span.year {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            width: calc(100% - 250px);
+            position: fixed;
+            bottom: 0;
+            left: 250px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                width: 100%;
+                position: static;
+                padding: 1rem;
+            }
+
+            nav ul {
+                text-align: center;
+            }
+
+            main {
+                margin-left: 0;
+            }
+
+            footer {
+                width: 100%;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Artikel 1</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portofolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="services.html">Layanan</a></li>
+            <li><a href="talent.html">Talent</a></li>
+            <li><a href="galeri.html">galeri</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Riwayat Sekolah</h2>
+            <div class="school-history">
+                <h3>Taman Kanak-Kanak</h3>
+                <ul>
+                    <li>
+                        <span class="school-name">TK Negeri Pertiwi</span>
+                        <span class="year">2008 - 2009</span>
+                    </li>
+                </ul>
+                <h3>Sekolah Dasar</h3>
+                <ul>
+                    <li>
+                        <span class="school-name">SD Negeri 25 Bagan Melibur</span>
+                        <span class="year">2009 - 2015</span>
+                    </li>
+                </ul>
+                <h3>Sekolah Menengah Pertama</h3>
+                <ul>
+                    <li>
+                        <span class="school-name">SMP Negeri 1 Merbau</span>
+                        <span class="year">2015 - 2018</span>
+                    </li>
+                </ul>
+                <h3>Sekolah Menengah Atas</h3>
+                <ul>
+                    <li>
+                        <span class="school-name">SMA Negeri 1 Merbau</span>
+                        <span class="year">2018 - 2021</span>
+                    </li>
+                </ul>
+                <h3>Perguruan Tinggi</h3>
+                <ul>
+                    <li>
+                        <span class="school-name">Universitas Islam Negeri Sultan Syarif Kasim Riau</span>
+                        <span class="year">2022 - Sekarang</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Muhammad Zul Asfi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
